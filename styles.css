@@ -1,0 +1,74 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 200px;
+}
+h1{
+  font-size: 40px;
+  font-family: "Freckle Face", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+img{
+  width: 150px;
+  border: 2px solid black;
+  border-radius: 50%;
+  box-shadow: 0px 0px 1.5px 1.5px black;
+}
+body.active{
+background-color: black;
+color: white;
+}
+#container{
+  padding: 2px;
+  background-color: rgb(253, 246, 246);
+  height: 9vh;
+  width: 9vw;
+  border-radius: 20px;
+  border: 2px solid rgb(12, 12, 12);
+  color: black;
+}
+#circle{
+  background-image: url(icons8-moon-30.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgb(21, 19, 19);
+  color: rgb(0, 0, 0);
+  border-radius: 50%;
+  height:8vh;
+  width: 4vw;
+  transition: 1s all;
+}
+#container.active{
+   background: black;
+   border: 2px solid white;
+}
+#container span{
+  font-size: 60px;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+#container.active #circle{
+  background-image: url(icons8-sun-30.png);
+ transform: translateX(4.5vw);
+ background: rgb(243, 243, 243);
+ transition: 1s all;
+}
+#image.active{
+  width: 150px;
+  border: 2px solid black;
+  border-radius: 50%;
+  box-shadow: 0px 0px 1.5px 1.5px rgb(255, 255, 255);;
+  background: linear-gradient(rgb(218, 10, 10),rgb(117, 34, 34));
+}
+
+
