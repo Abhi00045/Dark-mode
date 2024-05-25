@@ -14,9 +14,14 @@ function changed(){
     img.classList.toggle("active");
     h1.classList.toggle("active");
     circle.classList.toggle("active");
-    let str="I am vengeance!";
-    h1.innerHTML=str;
+    let originalText ="I am Batman!"
+    if(h1.innerHTML === originalText){
+        h1.innerHTML="I am vengeance!";
+    }else{
+        h1.innerHTML=originalText;
+    }
 }
+
 // function toggle(){
 //     toggled.classList.toggle("active");
 //     let str="I am vengeance!";
